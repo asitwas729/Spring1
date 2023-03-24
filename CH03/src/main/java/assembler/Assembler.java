@@ -17,6 +17,7 @@ public class Assembler {
     changePasswordService.setMemberDao(memberDao);
   }
 
+  //get
   public MemberDao getMemberDao() {
     return memberDao;
   }
