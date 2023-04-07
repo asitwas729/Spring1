@@ -8,12 +8,18 @@
     <artifactId>Spring</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+
+
     <modules>
         <module>CH03</module>
         <module>CH02</module>
         <module>CH04</module>
         <module>CH05</module>
         <module>CH06</module>
+        <module>CH07</module>
+        <module>CH08</module>
+        <module>CH10</module>
     </modules>
 
 
