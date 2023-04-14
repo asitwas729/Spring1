@@ -6,6 +6,7 @@ import chapter10.RegisterRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -66,13 +67,29 @@ public class RegisterController {
 //      return "register/step2";
 //    }
 //  }
-  @PostMapping("/step3")
-  public String handleStep3(@ModelAttribute("formData") RegisterRequest registerRequest) {
+//  @PostMapping("/step3")
+//  public String handleStep3(@ModelAttribute("formData") RegisterRequest registerRequest) {
+//    System.out.println("[POST] step3 >>>");
+//    try {
+//      memberRegisterService.regist(registerRequest);
+//      return "register/step3";
+//    } catch (DuplicationMemberException ex) {
+//      return "register/step2";
+//    }
+//  }
+
+  @PostMapping("/register/step3")
+  public String handleStep3(RegisterRequest registerRequest, Errors errors) {
     System.out.println("[POST] step3 >>>");
+    new RegisterRequestValidator().validate(registerRequest, errors);
+    if(errors.hasErrors()) {
+      return "register/step2";
+    }
     try {
       memberRegisterService.regist(registerRequest);
       return "register/step3";
     } catch (DuplicationMemberException ex) {
+      errors.rejectValue("email", "duplicate");
       return "register/step2";
     }
   }
