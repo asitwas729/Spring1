@@ -74,7 +74,7 @@
         </dependency>
     </dependencies>
 
-    <artifactId>CH10</artifactId>
+    <artifactId>study</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

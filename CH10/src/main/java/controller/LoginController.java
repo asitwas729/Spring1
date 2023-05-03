@@ -1,5 +1,6 @@
 package controller;
 
+import chapter10.MemberNotFoundException;
 import chapter10.WrongPasswordException;
 import chapter11.AuthInfo;
 import chapter11.AuthService;
@@ -104,6 +105,9 @@ public class LoginController {
 
       return "login/loginSuccess";
     }catch (WrongPasswordException ex) {
+      errors.reject("idPasswordNotMatching");
+      return "login/loginForm";
+    }catch (MemberNotFoundException ex1) {
       errors.reject("idPasswordNotMatching");
       return "login/loginForm";
     }

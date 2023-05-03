@@ -16,6 +16,7 @@ public class MemberRegisterService {
 
   }
 
+  //과제에는 필요없음
   public void regist(RegisterRequest req) {
     // 이메일로 회원 데이터 조회
     Member member = memberDao.selectByEmail(req.getEmail());

@@ -18,10 +18,10 @@ public class MemberConfig {
   @Bean(destroyMethod = "close")
   public DataSource dataSource() {
     DataSource ds = new DataSource();
-    ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-    ds.setUrl("jdbc:mysql://3.37.128.255/daelim?characterEncoding=utf8");
-    ds.setUsername("spring");
-    ds.setPassword("daelimspring");
+    ds.setDriverClassName("com.mysql.jdbc.Driver");
+    ds.setUrl("jdbc:mysql://localhost:3306/daelim?characterEncoding=utf8");
+    ds.setUsername("root");
+    ds.setPassword("1234");
     ds.setInitialSize(2);
     ds.setMaxActive(10);
     ds.setMaxIdle(10);

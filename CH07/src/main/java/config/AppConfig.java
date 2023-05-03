@@ -28,9 +28,9 @@ public class AppConfig {
   public DataSource dataSource() { //tomcat으로 import
     DataSource ds = new DataSource();
     ds.setDriverClassName("com.mysql.jdbc.Driver");
-    ds.setUrl("jdbc:mysql://13.124.38.253:3306/daelim?characterEncoding=utf8");
-    ds.setUsername("spring");
-    ds.setPassword("daelimspring");
+    ds.setUrl("jdbc:mysql://localhost:3306/daelim?characterEncoding=utf8");
+    ds.setUsername("root");
+    ds.setPassword("1234");
     ds.setInitialSize(2);
     ds.setMaxActive(10);
     ds.setMaxIdle(10);

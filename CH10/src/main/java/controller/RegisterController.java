@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/register")
@@ -78,10 +78,26 @@ public class RegisterController {
 //    }
 //  }
 
-  @PostMapping("/register/step3")
-  public String handleStep3(RegisterRequest registerRequest, Errors errors) {
+//  @PostMapping("/register/step3")
+//  public String handleStep3(RegisterRequest registerRequest, Errors errors) {
+//    System.out.println("[POST] step3 >>>");
+//    new RegisterRequestValidator().validate(registerRequest, errors);
+//    if(errors.hasErrors()) {
+//      return "register/step2";
+//    }
+//    try {
+//      memberRegisterService.regist(registerRequest);
+//      return "register/step3";
+//    } catch (DuplicationMemberException ex) {
+//      errors.rejectValue("email", "duplicate");
+//      return "register/step2";
+//    }
+//  }
+
+  @PostMapping("/step3")
+  public String handleStep3(@Valid RegisterRequest registerRequest, Errors errors) {
     System.out.println("[POST] step3 >>>");
-    new RegisterRequestValidator().validate(registerRequest, errors);
+//        new RegisterRequestValidator().validate(registerRequest, errors);
     if(errors.hasErrors()) {
       return "register/step2";
     }
@@ -89,7 +105,7 @@ public class RegisterController {
       memberRegisterService.regist(registerRequest);
       return "register/step3";
     } catch (DuplicationMemberException ex) {
-      errors.rejectValue("email", "duplicate");
+      errors.rejectValue("email", "duplicate.email");
       return "register/step2";
     }
   }

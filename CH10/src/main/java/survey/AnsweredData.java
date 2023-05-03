@@ -7,6 +7,7 @@ public class AnsweredData {
   private List<String> responses;
   private Respondent res;
 
+
   public List<String> getResponses() {
     return responses;
   }
