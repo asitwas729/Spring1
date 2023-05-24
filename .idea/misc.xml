@@ -14,6 +14,7 @@
       <set>
         <option value="$PROJECT_DIR$/CH09/pom.xml" />
         <option value="$PROJECT_DIR$/CH11/pom.xml" />
+        <option value="$PROJECT_DIR$/Quiz1/pom.xml" />
         <option value="$PROJECT_DIR$/Survey_202030319/pom.xml" />
       </set>
     </option>

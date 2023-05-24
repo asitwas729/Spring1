@@ -3,29 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>Spring</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>Spring</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-
-
-    <modules>
-        <module>CH03</module>
-        <module>CH02</module>
-        <module>CH04</module>
-        <module>CH05</module>
-        <module>CH06</module>
-        <module>CH07</module>
-        <module>CH13</module>
-        <module>CH11_1</module>
-        <module>Quiz1</module>
-        <module>CH10</module>
-        <module>Quiz2</module>
-        <module>CH14_1</module>
-    </modules>
-
+    <artifactId>CH11_1</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
