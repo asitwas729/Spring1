@@ -5,6 +5,15 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/CH13" />
         <option name="modules">
           <set>
@@ -14,28 +23,19 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Quiz" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CH15" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Quiz" />
+            <option value="$PROJECT_DIR$/CH15" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Quiz1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CH16" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Quiz1" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Quiz2" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/Quiz2" />
+            <option value="$PROJECT_DIR$/CH16" />
           </set>
         </option>
       </GradleProjectSettings>
